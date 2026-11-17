@@ -95,6 +95,22 @@
   });
 
   /* ---------------------------------------------------------------
+     Card flip - buttons with data-flip="<id>" flip that card
+     description between its front (text) and back (specs)
+  --------------------------------------------------------------- */
+  document.querySelectorAll('[data-flip]').forEach(function (btn) {
+    var target = document.getElementById(btn.getAttribute('data-flip'));
+    if (!target) return;
+    btn.addEventListener('click', function () {
+      var flipped = target.classList.toggle('is-flipped');
+      var front = target.querySelector('.card-flip-front');
+      var back = target.querySelector('.card-flip-back');
+      if (front) front.setAttribute('aria-hidden', flipped ? 'true' : 'false');
+      if (back) back.setAttribute('aria-hidden', flipped ? 'false' : 'true');
+    });
+  });
+
+  /* ---------------------------------------------------------------
      Careers - job filtering + apply action
   --------------------------------------------------------------- */
   var jobFilters = document.getElementById('jobFilters');

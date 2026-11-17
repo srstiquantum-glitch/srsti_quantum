@@ -38,7 +38,8 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container hero-content reveal">
+    <div class="container hero-grid">
+    <div class="hero-content reveal">
       <span class="eyebrow">Quantum Hardware, Made in India</span>
       <h1>Enabling <span class="accent">Quantum Innovation</span></h1>
       <p>Srsti Quantum fabricates superconducting quantum processors, microwave resonators, and specialized quantum devices with precision manufacturing and rigorous characterization.</p>
@@ -46,6 +47,11 @@
         <a href="/solutions" class="btn btn-primary">Explore Our Solutions</a>
         <a href="/about" class="btn btn-outline">Learn About Us</a>
       </div>
+    </div>
+    <figure class="hero-photo reveal" tabindex="0">
+      <picture><source srcset="assets/img/cavity-resonator-cleanroom.webp" type="image/webp"><img src="assets/img/cavity-resonator-cleanroom.jpg" alt="Dr. Subhash Kalidindi in the cleanroom holding a cavity resonator after fabrication" width="496" height="670"></picture>
+      <figcaption>5 cavity resonators fabricated by Srsti team and its optical micrograph showing a meander line. Dr. Subhash Kalidindi holding the resonator after fabrication process.</figcaption>
+    </figure>
     </div>
   </section>
 
@@ -89,12 +95,30 @@
         </article>
         <article class="solution-card reveal">
           <div class="card-img">
-            <picture><source srcset="assets/img/products/Characterization%20Services.webp" type="image/webp"><img src="assets/img/products/Characterization%20Services.jpg" alt="Quantum device characterization"></picture>
+            <picture><source srcset="assets/img/products/srsti-sethu.webp" type="image/webp"><img src="assets/img/products/srsti-sethu.jpg" alt="SRSTI SETHU standard characterization PCB"></picture>
           </div>
-          <div class="card-body">
-            <span class="card-tag">Validation</span>
-            <h3>Characterization Services</h3>
-            <p>Room-temperature, electrical, RF, and cryogenic measurements to validate performance, reliability, and quantum behavior.</p>
+          <div class="card-flip" id="sethuFlip">
+            <div class="card-body card-flip-front">
+              <div class="card-tag-row">
+                <span class="card-tag">Characterization PCB</span>
+                <button type="button" class="card-specs-btn" data-flip="sethuFlip">View Specs</button>
+              </div>
+              <h3>SRSTI SETHU: Standard Characterization PCB</h3>
+              <p>Standardized PCBs to test and characterize processors, resonators, thin films, solar dies, and semiconductor devices.</p>
+            </div>
+            <div class="card-body card-flip-back" aria-hidden="true">
+              <div class="card-tag-row">
+                <span class="card-tag">Specifications</span>
+                <button type="button" class="card-specs-btn" data-flip="sethuFlip">Back</button>
+              </div>
+              <ul class="spec-list">
+                <li class="spec-copper"><strong>6</strong><span>copper layers</span></li>
+                <li class="spec-rf"><strong>16</strong><span>RF lines</span></li>
+                <li class="spec-dc"><strong>24</strong><span>DC lines</span></li>
+                <li class="spec-sample"><strong>10&times;10</strong><span>sample size (mm)</span></li>
+                <li class="spec-board"><strong>60&times;80</strong><span>board size (mm)</span></li>
+              </ul>
+            </div>
           </div>
         </article>
       </div>
@@ -116,6 +140,18 @@
         <article class="news-card">
           <span>May 2026</span>
           <h3>Srsti reaches TRL 4 by producing prototype products and demonstrating functionality through laboratory validation and testing.</h3>
+        </article>
+        <article class="news-card">
+          <span>August 2026</span>
+          <h3>Srsti reaches TRL 6+ for NAADA resonators.</h3>
+        </article>
+        <article class="news-card">
+          <span>October 7, 2026</span>
+          <h3>NAADA resonator inaugurated by Honorable CM, Sri Nara Chandrababu Naidu at PANIIT, Vijayawada.</h3>
+        </article>
+        <article class="news-card">
+          <span>November 17, 2026</span>
+          <h3>Standard PCBs to characterize processors, thin films, solar dies, semiconductors, and sensors released! Pre-orders open now. Enquire for a quotation at: <a href="mailto:hello@srstiquantum.in">hello@srstiquantum.in</a></h3>
         </article>
        
       </div>
